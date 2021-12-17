@@ -1,6 +1,6 @@
 DEMO: https://brave-borg-8044c7.netlify.app/
 
-<h1>Getting Started</h1>
+<h2>Getting Started</h2>
 
 Install latest Bootstrap
 
