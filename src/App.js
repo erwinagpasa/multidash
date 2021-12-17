@@ -38,25 +38,33 @@ function App() {
                 </li>
                 <li>
                   <a href="#" className="nav-link link-dark">
-                    <Home className="nav-icon-wide" />
+                    <svg className="bi me-2" width="16" height="16">
+                      <a href="#speedometer2"></a>
+                    </svg>
                     Dashboard
                   </a>
                 </li>
                 <li>
                   <a href="#" className="nav-link link-dark">
-                    <Home className="nav-icon-wide" />
+                    <svg className="bi me-2" width="16" height="16">
+                      <a href="#table"></a>
+                    </svg>
                     Orders
                   </a>
                 </li>
                 <li>
                   <a href="#" className="nav-link link-dark">
-                    <Home className="nav-icon-wide" />
+                    <svg className="bi me-2" width="16" height="16">
+                      <a href="#grid"></a>
+                    </svg>
                     Products
                   </a>
                 </li>
                 <li>
                   <a href="#" className="nav-link link-dark">
-                    <Home className="nav-icon-wide" />
+                    <svg className="bi me-2" width="16" height="16">
+                      <a href="#people-circle"></a>
+                    </svg>
                     Customers
                   </a>
                 </li>
@@ -192,7 +200,7 @@ function App() {
               <div className="dropdown border-top">
                 <a
                   href="#"
-                  className="d-flex align-items-center justify-content-center p-3 link-dark text-decoration-none dropdown-toggle"
+                  className="custom-dropdown d-flex align-items-center justify-content-center p-3 link-dark text-decoration-none dropdown-toggle"
                   id="dropdownUser3"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
@@ -240,7 +248,7 @@ function App() {
             <div className="nav-wrap">
               <div class="d-flex bd-highlight">
                 <div class="p-2 flex-grow-1 bd-highlight">
-                  <div className="wrap-drawer-icon">
+                  <div className="wrap-drawer">
                     <Menu className="drawer-icon" id="sidebarCollapse" />
                   </div>
                 </div>
@@ -362,7 +370,7 @@ function App() {
               </div>
             </div>
 
-            <div id="main-container" className="container">
+            <div id="main-container" className="container-fluid">
               <h2>
                 Powerful and professional admin template for Web Applications,
                 CRM, CMS, Admin Panels and more..
