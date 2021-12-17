@@ -4,20 +4,14 @@ import $ from "jquery";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/js/bootstrap.js";
 
-import { Menu, Calendar, Home, Copy, User } from "react-feather";
+import { Sidebar, Bell, Sliders, Menu, Home, Copy, User } from "react-feather";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
-import {
-  faCopy,
-  faUserCircle,
-  faHome,
-  faBars,
-  faCoffee,
-} from "@fortawesome/free-solid-svg-icons";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
-library.add(fab, faCopy, faUserCircle, faHome, faBars, faCoffee);
+library.add(fab, faBars);
 
 $(function () {
   $("#sidebarCollapse").on("click", function () {
@@ -269,10 +263,24 @@ function App() {
                 <div className="xdropdown">
                   <a
                     href="#"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasRight"
+                    aria-controls="offcanvasRight"
                     className="custom-dropdown d-flex align-items-center link-dark text-decoration-none"
                   >
                     <div class="icon-badge-container">
-                      <User className="nav-icon" />
+                      <Sidebar className="nav-icon" />
+                    </div>
+                  </a>
+                </div>
+
+                <div className="xdropdown">
+                  <a
+                    href="#"
+                    className="custom-dropdown d-flex align-items-center link-dark text-decoration-none"
+                  >
+                    <div class="icon-badge-container">
+                      <Sliders className="nav-icon" />
                     </div>
                   </a>
                 </div>
@@ -287,7 +295,7 @@ function App() {
                   >
                     <div class="icon-badge-container">
                       <div class="icon-badge">6</div>
-                      <User className="nav-icon" />
+                      <Bell className="nav-icon" />
                     </div>
                   </a>
                   <ul
@@ -335,7 +343,7 @@ function App() {
                       width="42"
                       height="42"
                     />
-                    Erwin Agpasa
+                    <span className="username">Erwin Agpasa</span>
                   </a>
                   <ul
                     className="dropdown-menu text-small shadow"
@@ -418,6 +426,25 @@ function App() {
               </p>
             </div>
           </div>
+        </div>
+
+        {/* RIGHT SLIDER */}
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasRight"
+          aria-labelledby="offcanvasRightLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 id="offcanvasRightLabel">Offcanvas right</h5>
+            <button
+              type="button"
+              class="btn-close text-reset"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">...</div>
         </div>
       </main>
     </div>

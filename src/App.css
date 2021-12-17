@@ -319,6 +319,10 @@ ul ul a {
   #sidebar{
     display: none;
   }
+
+  .username{
+    display: none;
+  }
 }
 
 
