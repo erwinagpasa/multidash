@@ -12,7 +12,7 @@ npm install bootstrap
 npm install --save @types/bootstrap
 ```
 
-https://feathericons.com
+**https://feathericons.com**
 
 ```
 Install https://react-icons.github.io/react-icons/icons?name=fi
