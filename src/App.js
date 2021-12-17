@@ -383,46 +383,48 @@ function App() {
                 CRM, CMS, Admin Panels and more..
               </h2>
 
-              <h5 className="mt-5">Fuse React is a great kick-starter</h5>
+              <h5 className="mt-5">
+                Multidash Reactjs is a great kick-starter
+              </h5>
               <p>
-                Fuse React written with the React Hooks (New feature of react
-                let you use state and other React features without writing a
-                class. With the included apps and pages, Fuse React is a great
-                kick-starter for your next project. Don’t lose any time trying
-                to design or structure your pages, pick one and start coding
-                your logic right away!
+                Multidash Reactjs written with the React Hooks (New feature of
+                react let you use state and other React features without writing
+                a class. With the included apps and pages, Multidash Reactjs is
+                a great kick-starter for your next project. Don’t lose any time
+                trying to design or structure your pages, pick one and start
+                coding your logic right away!
               </p>
 
               <h5 className="mt-5">Fuse is a learning source</h5>
               <p>
                 With well commented and structured source code, whether a
                 beginner or a seasoned React developer, you will find something
-                interesting in Fuse React.
+                interesting in Multidash Reactjs.
               </p>
 
               <h5 className="mt-5">Customizable Theme Layouts</h5>
               <p>
-                Fuse React has a powerful layout system which allows you to
-                configure, customize and also create you own layout.
+                Multidash Reactjs has a powerful layout system which allows you
+                to configure, customize and also create you own layout.
               </p>
 
               <h5 className="mt-5">Ready-to-use Page Layouts</h5>
               <p>
-                Fuse React's page layout components are pre-built layouts which
-                you can simply copy/paste and start building your own page or
-                app based on it. It's very easy to replicate any page style that
-                you can find in Fuse React. It also makes your pages consistent
-                across your app.
+                Multidash Reactjs's page layout components are pre-built layouts
+                which you can simply copy/paste and start building your own page
+                or app based on it. It's very easy to replicate any page style
+                that you can find in Multidash Reactjs. It also makes your pages
+                consistent across your app.
               </p>
 
               <h5 className="mt-5">
                 Ever growing number of application examples
               </h5>
               <p>
-                Fuse React comes with variety of different application examples
-                that are built close to the real world examples. From Scrumboard
-                to Mailbox, Contacts to ToDo app, you will get working
-                applications to speed up the development.{" "}
+                Multidash Reactjs comes with variety of different application
+                examples that are built close to the real world examples. From
+                Scrumboard to Mailbox, Contacts to ToDo app, you will get
+                working applications to speed up the development.{" "}
               </p>
             </div>
           </div>
