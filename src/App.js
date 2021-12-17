@@ -4,12 +4,20 @@ import $ from "jquery";
 
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/js/bootstrap.js";
+import { Calendar, Home, Copy, User } from "react-feather";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { fab } from "@fortawesome/free-brands-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faBars, faCoffee } from "@fortawesome/free-solid-svg-icons";
+import {
+  faCopy,
+  faUserCircle,
+  faHome,
+  faBars,
+  faCoffee,
+} from "@fortawesome/free-solid-svg-icons";
 
-library.add(faBars, faCoffee);
+library.add(fab, faCopy, faUserCircle, faHome, faBars, faCoffee);
 
 $(function () {
   $("#sidebarCollapse").on("click", function () {
@@ -27,10 +35,10 @@ function App() {
               href="/"
               class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none"
             >
-              <svg class="bi me-2" width="40" height="32">
-                <a href="#bootstrap"></a>
-              </svg>
-              <span class="fs-4">Sidebar</span>
+              <h1>
+                <FontAwesomeIcon icon={["fab", "bootstrap"]} />
+                <span>Sidebar</span>
+              </h1>
             </a>
             <hr />
             <ul class="nav nav-pills flex-column mb-auto">
@@ -135,10 +143,10 @@ function App() {
               data-bs-placement="right"
               data-bs-original-title="Icon-only"
             >
-              <svg class="bi" width="40" height="32">
-                <a href="#bootstrap"></a>
-              </svg>
-              <span class="visually-hidden">Icon-only</span>
+              <FontAwesomeIcon
+                icon={["fab", "bootstrap"]}
+                className="brand-icon"
+              />
             </a>
             <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
               <li class="nav-item">
@@ -151,15 +159,7 @@ function App() {
                   data-bs-placement="right"
                   data-bs-original-title="Home"
                 >
-                  <svg
-                    class="bi"
-                    width="24"
-                    height="24"
-                    role="img"
-                    aria-label="Home"
-                  >
-                    <a href="#home"></a>
-                  </svg>
+                  <Home className="nav-icon" />
                 </a>
               </li>
               <li>
@@ -171,15 +171,7 @@ function App() {
                   data-bs-placement="right"
                   data-bs-original-title="Dashboard"
                 >
-                  <svg
-                    class="bi"
-                    width="24"
-                    height="24"
-                    role="img"
-                    aria-label="Dashboard"
-                  >
-                    <a href="#speedometer2"></a>
-                  </svg>
+                  <Copy className="nav-icon" />
                 </a>
               </li>
               <li>
@@ -231,15 +223,7 @@ function App() {
                   data-bs-placement="right"
                   data-bs-original-title="Customers"
                 >
-                  <svg
-                    class="bi"
-                    width="24"
-                    height="24"
-                    role="img"
-                    aria-label="Customers"
-                  >
-                    <a href="#people-circle"></a>
-                  </svg>
+                  <User className="nav-icon" />
                 </a>
               </li>
             </ul>
@@ -297,8 +281,8 @@ function App() {
             </button>
           </nav>
 
-          <h2>Collapsible Sidebar Using Bootstrap 5</h2>
           <p>
+            <Calendar className="nav-icon" />
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut

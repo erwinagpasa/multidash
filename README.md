@@ -9,3 +9,5 @@ npm install bootstrap
 ```
 npm install --save @types/bootstrap
 ```
+
+Install https://react-icons.github.io/react-icons/icons?name=fi
