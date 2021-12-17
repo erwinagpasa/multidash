@@ -24,3 +24,5 @@ Mulitidash is licensed under The MIT License (MIT). Which means that you can use
 
 <h1>Support</h1>
 Your generous donations support the continuation of this project. [Donate now]
+
+I was here
