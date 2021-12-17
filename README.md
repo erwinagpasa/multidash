@@ -1,6 +1,6 @@
 DEMO: https://brave-borg-8044c7.netlify.app/
 
-<h1>Getting Started</h1>
+<h2>Getting Started</h2>
 
 Install latest Bootstrap
 
@@ -24,3 +24,5 @@ Mulitidash is licensed under The MIT License (MIT). Which means that you can use
 
 <h1>Support</h1>
 Your generous donations support the continuation of this project. [Donate now]
+
+I was here
