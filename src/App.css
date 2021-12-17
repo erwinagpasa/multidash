@@ -8,6 +8,10 @@ html {
   height: -webkit-fill-available;
 }
 
+.max-height{
+  border: 1px solid #ff0000;
+
+}
 
 .container-fluid{
   background-color: #ddd;
