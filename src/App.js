@@ -1,5 +1,4 @@
 import "./App.css";
-import $ from "jquery";
 
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/js/bootstrap.js";
@@ -13,12 +12,6 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 library.add(fab, faBars);
 
-$(function () {
-  $("#sidebarCollapse").on("click", function () {
-    $("#sidebar").toggleClass("active");
-    $("#menu-shrink").toggleClass("shrink");
-  });
-});
 function App() {
   return (
     <div className="App">
@@ -30,10 +23,10 @@ function App() {
                 href="/"
                 className="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none"
               >
-                <h1>
+                <h2>
                   <FontAwesomeIcon icon={["fab", "bootstrap"]} />
-                  <span>Sidebar</span>
-                </h1>
+                  <span>Multidash</span>
+                </h2>
               </a>
               <hr />
               <ul className="nav nav-pills flex-column mb-auto">
@@ -45,33 +38,25 @@ function App() {
                 </li>
                 <li>
                   <a href="#" className="nav-link link-dark">
-                    <svg className="bi me-2" width="16" height="16">
-                      <a href="#speedometer2"></a>
-                    </svg>
+                    <Home className="nav-icon-wide" />
                     Dashboard
                   </a>
                 </li>
                 <li>
                   <a href="#" className="nav-link link-dark">
-                    <svg className="bi me-2" width="16" height="16">
-                      <a href="#table"></a>
-                    </svg>
+                    <Home className="nav-icon-wide" />
                     Orders
                   </a>
                 </li>
                 <li>
                   <a href="#" className="nav-link link-dark">
-                    <svg className="bi me-2" width="16" height="16">
-                      <a href="#grid"></a>
-                    </svg>
+                    <Home className="nav-icon-wide" />
                     Products
                   </a>
                 </li>
                 <li>
                   <a href="#" className="nav-link link-dark">
-                    <svg className="bi me-2" width="16" height="16">
-                      <a href="#people-circle"></a>
-                    </svg>
+                    <Home className="nav-icon-wide" />
                     Customers
                   </a>
                 </li>
@@ -255,8 +240,8 @@ function App() {
             <div className="nav-wrap">
               <div class="d-flex bd-highlight">
                 <div class="p-2 flex-grow-1 bd-highlight">
-                  <div id="sidebarCollapse" className="drawer-icon">
-                    <Menu className="nav-icon" />
+                  <div className="wrap-drawer-icon">
+                    <Menu className="drawer-icon" id="sidebarCollapse" />
                   </div>
                 </div>
 
