@@ -73,7 +73,7 @@ function App() {
               <div className="dropdown">
                 <a
                   href="#"
-                  className="d-flex align-items-center link-dark text-decoration-none dropdown-toggle"
+                  className="custom-dropdown d-flex align-items-center link-dark text-decoration-none dropdown-toggle"
                   id="dropdownUser2"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
@@ -85,7 +85,7 @@ function App() {
                     width="32"
                     height="32"
                   />
-                  <strong>mdo</strong>
+                  Settings
                 </a>
                 <ul
                   className="dropdown-menu text-small shadow"
@@ -253,6 +253,19 @@ function App() {
                   </div>
                 </div>
 
+                <form id="nav-search">
+                  <div class="input-group mb-3">
+                    <input
+                      type="text"
+                      class="form-control form-control"
+                      placeholder="Search Here"
+                    />
+                    <button type="submit" class="input-group-text btn-success">
+                      <i class="bi bi-search me-2"></i> Search
+                    </button>
+                  </div>
+                </form>
+
                 <div className="xdropdown">
                   <a
                     href="#"
@@ -376,48 +389,41 @@ function App() {
                 CRM, CMS, Admin Panels and more..
               </h2>
 
-              <h5 className="mt-5">
-                Multidash Reactjs is a great kick-starter
-              </h5>
+              <h5 className="mt-5">Multidash is a great kick-starter</h5>
               <p>
-                Multidash Reactjs written with the React Hooks (New feature of
-                react let you use state and other React features without writing
-                a class. With the included apps and pages, Multidash Reactjs is
-                a great kick-starter for your next project. Don’t lose any time
-                trying to design or structure your pages, pick one and start
-                coding your logic right away!
+                Don’t lose any time trying to design or structure your pages,
+                pick one and start coding your logic right away!
               </p>
 
-              <h5 className="mt-5">Fuse is a learning source</h5>
+              <h5 className="mt-5">Multidash is a learning source</h5>
               <p>
                 With well commented and structured source code, whether a
-                beginner or a seasoned React developer, you will find something
-                interesting in Multidash Reactjs.
+                beginner or a seasoned Reactjs developer, you will find
+                something interesting in Multidash.
               </p>
 
               <h5 className="mt-5">Customizable Theme Layouts</h5>
               <p>
-                Multidash Reactjs has a powerful layout system which allows you
-                to configure, customize and also create you own layout.
+                Has a powerful layout system which allows you to configure,
+                customize and also create you own layout.
               </p>
 
               <h5 className="mt-5">Ready-to-use Page Layouts</h5>
               <p>
                 Multidash Reactjs's page layout components are pre-built layouts
                 which you can simply copy/paste and start building your own page
-                or app based on it. It's very easy to replicate any page style
-                that you can find in Multidash Reactjs. It also makes your pages
-                consistent across your app.
+                or app based on it. It's very easy to replicate any page style.
+                It also makes your pages consistent across your app.
               </p>
 
               <h5 className="mt-5">
                 Ever growing number of application examples
               </h5>
               <p>
-                Multidash Reactjs comes with variety of different application
-                examples that are built close to the real world examples. From
-                Scrumboard to Mailbox, Contacts to ToDo app, you will get
-                working applications to speed up the development.{" "}
+                Comes with variety of different application examples that are
+                built close to the real world examples. From Scrumboard to
+                Mailbox, Contacts to ToDo app, you will get working applications
+                to speed up the development.
               </p>
             </div>
           </div>

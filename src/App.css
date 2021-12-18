@@ -14,6 +14,9 @@ html {
   padding-right: 15px!important;
   }
   
+#nav-search{
+margin-top:13px
+}
 /* .max-height{
   border: 1px solid #ff0000;
 
@@ -316,17 +319,12 @@ ul ul a {
   #sidebar.active{
     margin-left: 0px;
   }
-  #sidebarCollapse span{
+
+  #sidebarCollapse span,#nav-search,#sidebar, .username{
     display: none;
   }
 
-  #sidebar{
-    display: none;
-  }
-
-  .username{
-    display: none;
-  }
+  
 }
 
 
