@@ -1,6 +1,6 @@
 import { Search, Sidebar, Bell, Sliders, Menu } from "react-feather";
 
-let url = "https://devph.io";
+let foo = "https://devph.io";
 
 const Navbar = () => {
   return (
@@ -14,7 +14,8 @@ const Navbar = () => {
 
         <div className="xdropdown">
           <a
-            href={url}
+            href="javascript:void(0)"
+            onClick={foo}
             className="custom-dropdown d-flex align-items-center link-dark text-decoration-none"
           >
             <div className="icon-badge-container">
@@ -25,7 +26,8 @@ const Navbar = () => {
 
         <div className="xdropdown">
           <a
-            href={url}
+            href="javascript:void(0)"
+            onClick={foo}
             data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasRight"
             aria-controls="offcanvasRight"
@@ -39,7 +41,8 @@ const Navbar = () => {
 
         <div className="xdropdown">
           <a
-            href={url}
+            href="javascript:void(0)"
+            onClick={foo}
             className="custom-dropdown d-flex align-items-center link-dark text-decoration-none"
           >
             <div className="icon-badge-container">
@@ -50,7 +53,8 @@ const Navbar = () => {
 
         <div className="dropdown">
           <a
-            href={url}
+            href="javascript:void(0)"
+            onClick={foo}
             className="custom-dropdown d-flex align-items-center link-dark text-decoration-none dropdown-toggle"
             id="dropdownUser2"
             data-bs-toggle="dropdown"
@@ -66,17 +70,29 @@ const Navbar = () => {
             aria-labelledby="dropdownUser2"
           >
             <li>
-              <a className="dropdown-item" href={url}>
+              <a
+                className="dropdown-item"
+                href="javascript:void(0)"
+                onClick={foo}
+              >
                 New project...
               </a>
             </li>
             <li>
-              <a className="dropdown-item" href={url}>
+              <a
+                className="dropdown-item"
+                href="javascript:void(0)"
+                onClick={foo}
+              >
                 Settings
               </a>
             </li>
             <li>
-              <a className="dropdown-item" href={url}>
+              <a
+                className="dropdown-item"
+                href="javascript:void(0)"
+                onClick={foo}
+              >
                 Profile
               </a>
             </li>
@@ -84,7 +100,11 @@ const Navbar = () => {
               <hr className="dropdown-divider" />
             </li>
             <li>
-              <a className="dropdown-item" href={url}>
+              <a
+                className="dropdown-item"
+                href="javascript:void(0)"
+                onClick={foo}
+              >
                 Sign out
               </a>
             </li>
@@ -93,7 +113,8 @@ const Navbar = () => {
 
         <div className="dropdown">
           <a
-            href={url}
+            href="javascript:void(0)"
+            onClick={foo}
             className="custom-dropdown d-flex align-items-center link-dark text-decoration-none dropdown-toggle"
             id="dropdownUser2"
             data-bs-toggle="dropdown"
@@ -113,17 +134,29 @@ const Navbar = () => {
             aria-labelledby="dropdownUser2"
           >
             <li>
-              <a className="dropdown-item" href={url}>
+              <a
+                className="dropdown-item"
+                href="javascript:void(0)"
+                onClick={foo}
+              >
                 New project...
               </a>
             </li>
             <li>
-              <a className="dropdown-item" href={url}>
+              <a
+                className="dropdown-item"
+                href="javascript:void(0)"
+                onClick={foo}
+              >
                 Settings
               </a>
             </li>
             <li>
-              <a className="dropdown-item" href={url}>
+              <a
+                className="dropdown-item"
+                href="javascript:void(0)"
+                onClick={foo}
+              >
                 Profile
               </a>
             </li>
@@ -131,7 +164,11 @@ const Navbar = () => {
               <hr className="dropdown-divider" />
             </li>
             <li>
-              <a className="dropdown-item" href={url}>
+              <a
+                className="dropdown-item"
+                href="javascript:void(0)"
+                onClick={foo}
+              >
                 Sign out
               </a>
             </li>
