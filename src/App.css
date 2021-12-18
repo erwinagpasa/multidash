@@ -92,19 +92,19 @@ background-color: #4b2294;
 
 }
 
-
+/* 
 .icon-badge-group .icon-badge-container {
     display: inline-block;
-    margin-left:15px;
-}
-
+    margin-left:5px;
+} */
+/* 
 .icon-badge-container:first-child { 
   margin-left:5px
-}
+} */
 
 .icon-badge-container {
     margin-top:8px;
-    margin-right: 20px;
+    margin-right: 10px;
     position:relative;
     padding-bottom: 6px;
 }
@@ -144,11 +144,11 @@ background-color: #4b2294;
 
 
 
-.bi {
+/* .bi {
   vertical-align: -.125em;
   pointer-events: none;
   fill: currentColor;
-}
+} */
 
 .dropdown-toggle { outline: 0; }
 
@@ -320,7 +320,7 @@ ul ul a {
     margin-left: 0px;
   }
 
-  #sidebarCollapse span,#nav-search,#sidebar, .username{
+  #sidebarCollapse span,#sidebar, .username{
     display: none;
   }
 
