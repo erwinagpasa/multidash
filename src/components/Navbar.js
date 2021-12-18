@@ -1,5 +1,7 @@
 import { Search, Sidebar, Bell, Sliders, Menu } from "react-feather";
 
+let url = "";
+
 const Navbar = () => {
   return (
     <div className="nav-wrap">
@@ -12,7 +14,7 @@ const Navbar = () => {
 
         <div className="xdropdown">
           <a
-            href="#"
+            href={url}
             className="custom-dropdown d-flex align-items-center link-dark text-decoration-none"
           >
             <div className="icon-badge-container">
@@ -23,7 +25,7 @@ const Navbar = () => {
 
         <div className="xdropdown">
           <a
-            href="#"
+            href={url}
             data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasRight"
             aria-controls="offcanvasRight"
@@ -37,7 +39,7 @@ const Navbar = () => {
 
         <div className="xdropdown">
           <a
-            href="#"
+            href={url}
             className="custom-dropdown d-flex align-items-center link-dark text-decoration-none"
           >
             <div className="icon-badge-container">
@@ -48,7 +50,7 @@ const Navbar = () => {
 
         <div className="dropdown">
           <a
-            href="#"
+            href={url}
             className="custom-dropdown d-flex align-items-center link-dark text-decoration-none dropdown-toggle"
             id="dropdownUser2"
             data-bs-toggle="dropdown"
@@ -64,17 +66,17 @@ const Navbar = () => {
             aria-labelledby="dropdownUser2"
           >
             <li>
-              <a className="dropdown-item" href="#">
+              <a className="dropdown-item" href={url}>
                 New project...
               </a>
             </li>
             <li>
-              <a className="dropdown-item" href="#">
+              <a className="dropdown-item" href={url}>
                 Settings
               </a>
             </li>
             <li>
-              <a className="dropdown-item" href="#">
+              <a className="dropdown-item" href={url}>
                 Profile
               </a>
             </li>
@@ -82,7 +84,7 @@ const Navbar = () => {
               <hr className="dropdown-divider" />
             </li>
             <li>
-              <a className="dropdown-item" href="#">
+              <a className="dropdown-item" href={url}>
                 Sign out
               </a>
             </li>
@@ -91,7 +93,7 @@ const Navbar = () => {
 
         <div className="dropdown">
           <a
-            href="#"
+            href={url}
             className="custom-dropdown d-flex align-items-center link-dark text-decoration-none dropdown-toggle"
             id="dropdownUser2"
             data-bs-toggle="dropdown"
@@ -111,17 +113,17 @@ const Navbar = () => {
             aria-labelledby="dropdownUser2"
           >
             <li>
-              <a className="dropdown-item" href="#">
+              <a className="dropdown-item" href={url}>
                 New project...
               </a>
             </li>
             <li>
-              <a className="dropdown-item" href="#">
+              <a className="dropdown-item" href={url}>
                 Settings
               </a>
             </li>
             <li>
-              <a className="dropdown-item" href="#">
+              <a className="dropdown-item" href={url}>
                 Profile
               </a>
             </li>
@@ -129,7 +131,7 @@ const Navbar = () => {
               <hr className="dropdown-divider" />
             </li>
             <li>
-              <a className="dropdown-item" href="#">
+              <a className="dropdown-item" href={url}>
                 Sign out
               </a>
             </li>

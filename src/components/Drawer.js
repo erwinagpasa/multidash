@@ -8,13 +8,14 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 library.add(fab, faBars);
 
 const sitename = "Multidash";
+let url = "";
 
 const Drawer = () => {
   return (
     <div id="sidebar">
       <div className="vh-100 d-flex flex-column flex-shrink-0 p-3 bg-light">
         <a
-          href="/"
+          href={url}
           className="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none"
         >
           <h2>
@@ -25,31 +26,31 @@ const Drawer = () => {
         <hr />
         <ul className="nav nav-pills flex-column mb-auto">
           <li className="nav-item">
-            <a href="#" className="nav-link active" aria-current="page">
+            <a href={url} className="nav-link active" aria-current="page">
               <Home className="drawer-icon-menu" />
               Home
             </a>
           </li>
           <li>
-            <a href="#" className="nav-link link-dark">
+            <a href={url} className="nav-link link-dark">
               <Layout className="drawer-icon-menu" />
               Layout
             </a>
           </li>
           <li>
-            <a href="#" className="nav-link link-dark">
+            <a href={url} className="nav-link link-dark">
               <ShoppingBag className="drawer-icon-menu" />
               Orders
             </a>
           </li>
           <li>
-            <a href="#" className="nav-link link-dark">
+            <a href={url} className="nav-link link-dark">
               <Database className="drawer-icon-menu" />
               Data Tables
             </a>
           </li>
           <li>
-            <a href="#" className="nav-link link-dark">
+            <a href={url} className="nav-link link-dark">
               <Users className="drawer-icon-menu" />
               Customers
             </a>
@@ -58,7 +59,7 @@ const Drawer = () => {
         <hr />
         <div className="dropdown">
           <a
-            href="#"
+            href={url}
             className="custom-dropdown d-flex align-items-center link-dark text-decoration-none dropdown-toggle"
             id="dropdownUser2"
             data-bs-toggle="dropdown"
@@ -78,17 +79,17 @@ const Drawer = () => {
             aria-labelledby="dropdownUser2"
           >
             <li>
-              <a className="dropdown-item" href="#">
+              <a className="dropdown-item" href={url}>
                 New project...
               </a>
             </li>
             <li>
-              <a className="dropdown-item" href="#">
+              <a className="dropdown-item" href={url}>
                 Settings
               </a>
             </li>
             <li>
-              <a className="dropdown-item" href="#">
+              <a className="dropdown-item" href={url}>
                 Profile
               </a>
             </li>
@@ -96,7 +97,7 @@ const Drawer = () => {
               <hr className="dropdown-divider" />
             </li>
             <li>
-              <a className="dropdown-item" href="#">
+              <a className="dropdown-item" href={url}>
                 Sign out
               </a>
             </li>
