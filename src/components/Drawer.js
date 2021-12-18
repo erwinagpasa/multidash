@@ -14,7 +14,7 @@ const Drawer = () => {
   return (
     <div id="sidebar">
       <div className="vh-100 d-flex flex-column flex-shrink-0 p-3 bg-light">
-        <a
+        <Link
           href="javascript:void(0)"
           onClick={foo}
           className="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none"
@@ -23,11 +23,11 @@ const Drawer = () => {
             <FontAwesomeIcon icon={["fab", "bootstrap"]} />
             <span>{sitename}</span>
           </h2>
-        </a>
+        </Link>
         <hr />
         <ul className="nav nav-pills flex-column mb-auto">
           <li className="nav-item">
-            <a
+            <Link
               href="javascript:void(0)"
               onClick={foo}
               className="nav-link active"
@@ -35,52 +35,52 @@ const Drawer = () => {
             >
               <Home className="drawer-icon-menu" />
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a
+            <Link
               href="javascript:void(0)"
               onClick={foo}
               className="nav-link link-dark"
             >
               <Layout className="drawer-icon-menu" />
               Layout
-            </a>
+            </Link>
           </li>
           <li>
-            <a
+            <Link
               href="javascript:void(0)"
               onClick={foo}
               className="nav-link link-dark"
             >
               <ShoppingBag className="drawer-icon-menu" />
               Orders
-            </a>
+            </Link>
           </li>
           <li>
-            <a
+            <Link
               href="javascript:void(0)"
               onClick={foo}
               className="nav-link link-dark"
             >
               <Database className="drawer-icon-menu" />
               Data Tables
-            </a>
+            </Link>
           </li>
           <li>
-            <a
+            <Link
               href="javascript:void(0)"
               onClick={foo}
               className="nav-link link-dark"
             >
               <Users className="drawer-icon-menu" />
               Customers
-            </a>
+            </Link>
           </li>
         </ul>
         <hr />
         <div className="dropdown">
-          <a
+          <Link
             href="javascript:void(0)"
             onClick={foo}
             className="custom-dropdown d-flex align-items-center link-dark text-decoration-none dropdown-toggle"
@@ -96,49 +96,49 @@ const Drawer = () => {
               height="32"
             />
             Settings
-          </a>
+          </Link>
           <ul
             className="dropdown-menu text-small shadow"
             aria-labelledby="dropdownUser2"
           >
             <li>
-              <a
+              <Link
                 className="dropdown-item"
                 href="javascript:void(0)"
                 onClick={foo}
               >
                 New project...
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 className="dropdown-item"
                 href="javascript:void(0)"
                 onClick={foo}
               >
                 Settings
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 className="dropdown-item"
                 href="javascript:void(0)"
                 onClick={foo}
               >
                 Profile
-              </a>
+              </Link>
             </li>
             <li>
               <hr className="dropdown-divider" />
             </li>
             <li>
-              <a
+              <Link
                 className="dropdown-item"
                 href="javascript:void(0)"
                 onClick={foo}
               >
                 Sign out
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

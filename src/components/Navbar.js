@@ -13,7 +13,7 @@ const Navbar = () => {
         </div>
 
         <div className="xdropdown">
-          <a
+          <Link
             href="javascript:void(0)"
             onClick={foo}
             className="custom-dropdown d-flex align-items-center link-dark text-decoration-none"
@@ -21,11 +21,11 @@ const Navbar = () => {
             <div className="icon-badge-container">
               <Search className="nav-icon" />
             </div>
-          </a>
+          </Link>
         </div>
 
         <div className="xdropdown">
-          <a
+          <Link
             href="javascript:void(0)"
             onClick={foo}
             data-bs-toggle="offcanvas"
@@ -36,11 +36,11 @@ const Navbar = () => {
             <div className="icon-badge-container">
               <Sidebar className="nav-icon" />
             </div>
-          </a>
+          </Link>
         </div>
 
         <div className="xdropdown">
-          <a
+          <Link
             href="javascript:void(0)"
             onClick={foo}
             className="custom-dropdown d-flex align-items-center link-dark text-decoration-none"
@@ -48,11 +48,11 @@ const Navbar = () => {
             <div className="icon-badge-container">
               <Sliders className="nav-icon" />
             </div>
-          </a>
+          </Link>
         </div>
 
         <div className="dropdown">
-          <a
+          <Link
             href="javascript:void(0)"
             onClick={foo}
             className="custom-dropdown d-flex align-items-center link-dark text-decoration-none dropdown-toggle"
@@ -64,55 +64,55 @@ const Navbar = () => {
               <div className="icon-badge">6</div>
               <Bell className="nav-icon" />
             </div>
-          </a>
+          </Link>
           <ul
             className="dropdown-menu text-small shadow"
             aria-labelledby="dropdownUser2"
           >
             <li>
-              <a
+              <Link
                 className="dropdown-item"
                 href="javascript:void(0)"
                 onClick={foo}
               >
                 New project...
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 className="dropdown-item"
                 href="javascript:void(0)"
                 onClick={foo}
               >
                 Settings
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 className="dropdown-item"
                 href="javascript:void(0)"
                 onClick={foo}
               >
                 Profile
-              </a>
+              </Link>
             </li>
             <li>
               <hr className="dropdown-divider" />
             </li>
             <li>
-              <a
+              <Link
                 className="dropdown-item"
                 href="javascript:void(0)"
                 onClick={foo}
               >
                 Sign out
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
 
         <div className="dropdown">
-          <a
+          <Link
             href="javascript:void(0)"
             onClick={foo}
             className="custom-dropdown d-flex align-items-center link-dark text-decoration-none dropdown-toggle"
@@ -128,49 +128,49 @@ const Navbar = () => {
               height="42"
             />
             <span className="username">Erwin Agpasa</span>
-          </a>
+          </Link>
           <ul
             className="dropdown-menu text-small shadow"
             aria-labelledby="dropdownUser2"
           >
             <li>
-              <a
+              <Link
                 className="dropdown-item"
                 href="javascript:void(0)"
                 onClick={foo}
               >
                 New project...
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 className="dropdown-item"
                 href="javascript:void(0)"
                 onClick={foo}
               >
                 Settings
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 className="dropdown-item"
                 href="javascript:void(0)"
                 onClick={foo}
               >
                 Profile
-              </a>
+              </Link>
             </li>
             <li>
               <hr className="dropdown-divider" />
             </li>
             <li>
-              <a
+              <Link
                 className="dropdown-item"
                 href="javascript:void(0)"
                 onClick={foo}
               >
                 Sign out
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
