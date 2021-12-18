@@ -3,8 +3,8 @@ import { Search, Sidebar, Bell, Sliders, Menu } from "react-feather";
 const Navbar = () => {
   return (
     <div className="nav-wrap">
-      <div class="d-flex bd-highlight">
-        <div class="p-2 flex-grow-1 bd-highlight">
+      <div className="d-flex bd-highlight">
+        <div className="p-2 flex-grow-1 bd-highlight">
           <div className="wrap-drawer">
             <Menu className="drawer-icon" id="sidebarCollapse" />
           </div>
@@ -15,7 +15,7 @@ const Navbar = () => {
             href="#"
             className="custom-dropdown d-flex align-items-center link-dark text-decoration-none"
           >
-            <div class="icon-badge-container">
+            <div className="icon-badge-container">
               <Search className="nav-icon" />
             </div>
           </a>
@@ -29,7 +29,7 @@ const Navbar = () => {
             aria-controls="offcanvasRight"
             className="custom-dropdown d-flex align-items-center link-dark text-decoration-none"
           >
-            <div class="icon-badge-container">
+            <div className="icon-badge-container">
               <Sidebar className="nav-icon" />
             </div>
           </a>
@@ -40,7 +40,7 @@ const Navbar = () => {
             href="#"
             className="custom-dropdown d-flex align-items-center link-dark text-decoration-none"
           >
-            <div class="icon-badge-container">
+            <div className="icon-badge-container">
               <Sliders className="nav-icon" />
             </div>
           </a>
@@ -54,8 +54,8 @@ const Navbar = () => {
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
-            <div class="icon-badge-container">
-              <div class="icon-badge">6</div>
+            <div className="icon-badge-container">
+              <div className="icon-badge">6</div>
               <Bell className="nav-icon" />
             </div>
           </a>
