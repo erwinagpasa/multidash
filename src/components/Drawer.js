@@ -26,7 +26,7 @@ const Drawer = () => {
         <ul className="nav nav-pills flex-column mb-auto">
           <li className="nav-item">
             <a href="#" className="nav-link active" aria-current="page">
-              <Home className="nav-icon-wide" />
+              <Home className="drawer-icon-menu" />
               Home
             </a>
           </li>
