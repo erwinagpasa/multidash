@@ -1,7 +1,5 @@
 import { Search, Sidebar, Bell, Sliders, Menu } from "react-feather";
 
-let foo = "https://devph.io";
-
 const Navbar = () => {
   return (
     <div className="nav-wrap">
@@ -13,21 +11,19 @@ const Navbar = () => {
         </div>
 
         <div className="xdropdown">
-          <Link
-            href="javascript:void(0)"
-            onClick={foo}
+          <a
+            href="/"
             className="custom-dropdown d-flex align-items-center link-dark text-decoration-none"
           >
             <div className="icon-badge-container">
               <Search className="nav-icon" />
             </div>
-          </Link>
+          </a>
         </div>
 
         <div className="xdropdown">
-          <Link
-            href="javascript:void(0)"
-            onClick={foo}
+          <a
+            href="/"
             data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasRight"
             aria-controls="offcanvasRight"
@@ -36,25 +32,23 @@ const Navbar = () => {
             <div className="icon-badge-container">
               <Sidebar className="nav-icon" />
             </div>
-          </Link>
+          </a>
         </div>
 
         <div className="xdropdown">
-          <Link
-            href="javascript:void(0)"
-            onClick={foo}
+          <a
+            href="/"
             className="custom-dropdown d-flex align-items-center link-dark text-decoration-none"
           >
             <div className="icon-badge-container">
               <Sliders className="nav-icon" />
             </div>
-          </Link>
+          </a>
         </div>
 
         <div className="dropdown">
-          <Link
-            href="javascript:void(0)"
-            onClick={foo}
+          <a
+            href="/"
             className="custom-dropdown d-flex align-items-center link-dark text-decoration-none dropdown-toggle"
             id="dropdownUser2"
             data-bs-toggle="dropdown"
@@ -64,57 +58,40 @@ const Navbar = () => {
               <div className="icon-badge">6</div>
               <Bell className="nav-icon" />
             </div>
-          </Link>
+          </a>
           <ul
             className="dropdown-menu text-small shadow"
             aria-labelledby="dropdownUser2"
           >
             <li>
-              <Link
-                className="dropdown-item"
-                href="javascript:void(0)"
-                onClick={foo}
-              >
+              <a className="dropdown-item" href="/">
                 New project...
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
-                className="dropdown-item"
-                href="javascript:void(0)"
-                onClick={foo}
-              >
+              <a className="dropdown-item" href="/">
                 Settings
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
-                className="dropdown-item"
-                href="javascript:void(0)"
-                onClick={foo}
-              >
+              <a className="dropdown-item" href="/">
                 Profile
-              </Link>
+              </a>
             </li>
             <li>
               <hr className="dropdown-divider" />
             </li>
             <li>
-              <Link
-                className="dropdown-item"
-                href="javascript:void(0)"
-                onClick={foo}
-              >
+              <a className="dropdown-item" href="/">
                 Sign out
-              </Link>
+              </a>
             </li>
           </ul>
         </div>
 
         <div className="dropdown">
-          <Link
-            href="javascript:void(0)"
-            onClick={foo}
+          <a
+            href="/"
             className="custom-dropdown d-flex align-items-center link-dark text-decoration-none dropdown-toggle"
             id="dropdownUser2"
             data-bs-toggle="dropdown"
@@ -128,49 +105,33 @@ const Navbar = () => {
               height="42"
             />
             <span className="username">Erwin Agpasa</span>
-          </Link>
+          </a>
           <ul
             className="dropdown-menu text-small shadow"
             aria-labelledby="dropdownUser2"
           >
             <li>
-              <Link
-                className="dropdown-item"
-                href="javascript:void(0)"
-                onClick={foo}
-              >
+              <a className="dropdown-item" href="/">
                 New project...
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
-                className="dropdown-item"
-                href="javascript:void(0)"
-                onClick={foo}
-              >
+              <a className="dropdown-item" href="/">
                 Settings
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
-                className="dropdown-item"
-                href="javascript:void(0)"
-                onClick={foo}
-              >
+              <a className="dropdown-item" href="/">
                 Profile
-              </Link>
+              </a>
             </li>
             <li>
               <hr className="dropdown-divider" />
             </li>
             <li>
-              <Link
-                className="dropdown-item"
-                href="javascript:void(0)"
-                onClick={foo}
-              >
+              <a className="dropdown-item" href="/">
                 Sign out
-              </Link>
+              </a>
             </li>
           </ul>
         </div>

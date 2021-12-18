@@ -8,81 +8,57 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 library.add(fab, faBars);
 
 const sitename = "Multidash";
-let foo = "https://devph.io";
 
 const Drawer = () => {
   return (
     <div id="sidebar">
       <div className="vh-100 d-flex flex-column flex-shrink-0 p-3 bg-light">
-        <Link
-          href="javascript:void(0)"
-          onClick={foo}
+        <a
+          href="/"
           className="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none"
         >
           <h2>
             <FontAwesomeIcon icon={["fab", "bootstrap"]} />
             <span>{sitename}</span>
           </h2>
-        </Link>
+        </a>
         <hr />
         <ul className="nav nav-pills flex-column mb-auto">
           <li className="nav-item">
-            <Link
-              href="javascript:void(0)"
-              onClick={foo}
-              className="nav-link active"
-              aria-current="page"
-            >
+            <a href="/" className="nav-link active" aria-current="page">
               <Home className="drawer-icon-menu" />
               Home
-            </Link>
+            </a>
           </li>
           <li>
-            <Link
-              href="javascript:void(0)"
-              onClick={foo}
-              className="nav-link link-dark"
-            >
+            <a href="/" className="nav-link link-dark">
               <Layout className="drawer-icon-menu" />
               Layout
-            </Link>
+            </a>
           </li>
           <li>
-            <Link
-              href="javascript:void(0)"
-              onClick={foo}
-              className="nav-link link-dark"
-            >
+            <a href="/" className="nav-link link-dark">
               <ShoppingBag className="drawer-icon-menu" />
               Orders
-            </Link>
+            </a>
           </li>
           <li>
-            <Link
-              href="javascript:void(0)"
-              onClick={foo}
-              className="nav-link link-dark"
-            >
+            <a href="/" className="nav-link link-dark">
               <Database className="drawer-icon-menu" />
               Data Tables
-            </Link>
+            </a>
           </li>
           <li>
-            <Link
-              href="javascript:void(0)"
-              onClick={foo}
-              className="nav-link link-dark"
-            >
+            <a href="/" className="nav-link link-dark">
               <Users className="drawer-icon-menu" />
               Customers
-            </Link>
+            </a>
           </li>
         </ul>
         <hr />
         <div className="dropdown">
-          <Link
-            href="javascript:void(0)"
-            onClick={foo}
+          <a
+            href="/"
             className="custom-dropdown d-flex align-items-center link-dark text-decoration-none dropdown-toggle"
             id="dropdownUser2"
             data-bs-toggle="dropdown"
@@ -96,49 +72,33 @@ const Drawer = () => {
               height="32"
             />
             Settings
-          </Link>
+          </a>
           <ul
             className="dropdown-menu text-small shadow"
             aria-labelledby="dropdownUser2"
           >
             <li>
-              <Link
-                className="dropdown-item"
-                href="javascript:void(0)"
-                onClick={foo}
-              >
+              <a className="dropdown-item" href="/">
                 New project...
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
-                className="dropdown-item"
-                href="javascript:void(0)"
-                onClick={foo}
-              >
+              <a className="dropdown-item" href="/">
                 Settings
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
-                className="dropdown-item"
-                href="javascript:void(0)"
-                onClick={foo}
-              >
+              <a className="dropdown-item" href="/">
                 Profile
-              </Link>
+              </a>
             </li>
             <li>
               <hr className="dropdown-divider" />
             </li>
             <li>
-              <Link
-                className="dropdown-item"
-                href="javascript:void(0)"
-                onClick={foo}
-              >
+              <a className="dropdown-item" href="/">
                 Sign out
-              </Link>
+              </a>
             </li>
           </ul>
         </div>
