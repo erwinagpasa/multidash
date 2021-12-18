@@ -1,6 +1,6 @@
 import { Search, Sidebar, Bell, Sliders, Menu } from "react-feather";
 
-let url = "";
+let url = "https://devph.io";
 
 const Navbar = () => {
   return (

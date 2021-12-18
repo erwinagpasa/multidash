@@ -8,7 +8,7 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 library.add(fab, faBars);
 
 const sitename = "Multidash";
-let url = "";
+let url = "https://devph.io";
 
 const Drawer = () => {
   return (
