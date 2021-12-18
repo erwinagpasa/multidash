@@ -8,39 +8,14 @@ html {
   height: -webkit-fill-available;
 }
 
-main {
-  display: flex;
-  flex-wrap: nowrap;
-  height: 100vh;
-  height: -webkit-fill-available;
-  max-height: 100vh;
-  overflow-x: auto;
-  overflow-y: hidden;
-}
-
-.wrapper {
-  display: flex;
-  width: 100%;
-  align-items: stretch;
-}
-
-.scrollarea {
-  overflow-y: auto!important;
-}
-
-
-#sidebar {
-  min-width: 250px;
-  max-width: 250px;
-  transition: all 0.3s;
-}
-
-.display-none{
-  display: none;
-}
-
-.shrink{
-  display: block!important;
+#main-container{
+  margin-top: 30px;
+  padding-left: 15px!important;
+  padding-right: 15px!important;
+  }
+  
+#nav-search{
+margin-top:13px
 }
 /* .max-height{
   border: 1px solid #ff0000;
@@ -49,8 +24,9 @@ main {
 
 
 
-#main-container{
-margin-top: 30px;
+
+.wrap-drawer{
+  padding: 8px;
 }
 
 
@@ -71,14 +47,9 @@ margin-top: 30px;
 .brand-icon{
   font-size: 44px;  
 }
-
-.wrap-drawer-icon{
-  padding: 8px;
-}
-
-
 .drawer-icon{
   cursor: pointer;
+
   width: 28px;
   height: 28px;
 }
@@ -90,6 +61,15 @@ margin-top: 30px;
   height: 18px;
 }
 
+main {
+  display: flex;
+  flex-wrap: nowrap;
+  height: 100vh;
+  height: -webkit-fill-available;
+  max-height: 100vh;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
 
 .nav-wrap{
   background-color: #673ab7;
@@ -106,28 +86,30 @@ margin-top: 30px;
   display: none;
 }
 
-/* .secondary-menu{
+.secondary-menu{
 max-width: 600px;
 background-color: #4b2294;
 
-} */
+}
 
-
+/* 
 .icon-badge-group .icon-badge-container {
     display: inline-block;
-    margin-left:15px;
-}
-
+    margin-left:5px;
+} */
+/* 
 .icon-badge-container:first-child { 
   margin-left:5px
-}
+} */
 
 .icon-badge-container {
     margin-top:8px;
-    margin-right: 20px;
+    margin-right: 10px;
     position:relative;
     padding-bottom: 6px;
 }
+
+
 
 .icon-badge {
     background-color: red;
@@ -146,9 +128,11 @@ background-color: #4b2294;
 
 
 
+.scrollarea {
+  overflow-y: auto!important;
+}
 
-
-/* .b-example-divider {
+.b-example-divider {
   flex-shrink: 0;
   width: 1.5rem;
   height: 100vh;
@@ -156,7 +140,7 @@ background-color: #4b2294;
   border: solid rgba(0, 0, 0, .15);
   border-width: 1px 0;
   box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-} */
+}
 
 
 
@@ -185,6 +169,90 @@ background-color: #4b2294;
 .btn-toggle:focus {
   color: rgba(0, 0, 0, .85);
   background-color: #d2f4ea;
+}
+/* 
+.btn-toggle::before {
+  width: 1.25em;
+  line-height: 0;
+  content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%280,0,0,.5%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
+  transition: transform .35s ease;
+  transform-origin: .5em 50%;
+} */
+
+/* .btn-toggle[aria-expanded="true"] {
+  color: rgba(0, 0, 0, .85);
+}
+.btn-toggle[aria-expanded="true"]::before {
+  transform: rotate(90deg);
+}
+
+.btn-toggle-nav a {
+  display: inline-flex;
+  padding: .1875rem .5rem;
+  margin-top: .125rem;
+  margin-left: 1.25rem;
+  text-decoration: none;
+}
+.btn-toggle-nav a:hover,
+.btn-toggle-nav a:focus {
+  background-color: #d2f4ea;
+}
+
+
+
+.fw-semibold { font-weight: 600; }
+.lh-tight { line-height: 1.25; }
+
+
+
+a,
+a:hover,
+a:focus{
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.3s;
+} */
+
+.navbar{
+  padding: 15px 10px;
+  background: #fff;
+  border: none;
+  border-radius: 0;
+  margin-bottom: 40px;
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}
+
+.navbar-btn{
+  box-shadow: none;
+  outline: none!important;
+  border: none;
+}
+
+.line{
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px dashed #ddd;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    background: #ddd;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+
+.display-none{
+  display: none;
+}
+.shrink{
+  display: block!important;
 }
 
 #sidebar.active{
@@ -239,29 +307,24 @@ ul ul a {
 }
  
 
-/* #content {
+#content {
     width: 100%;
     padding: 20px;
     min-height: 100vh;
     transition: all 0.3s;
-} */
+}
 
 @media(max-width:768px){
   #sidebar{margin-left: -250px;}
   #sidebar.active{
     margin-left: 0px;
   }
-  #sidebarCollapse span{
+
+  #sidebarCollapse span,#sidebar, .username{
     display: none;
   }
 
-  #sidebar{
-    display: none;
-  }
-
-  .username{
-    display: none;
-  }
+  
 }
 
 
