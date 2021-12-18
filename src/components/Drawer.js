@@ -1,4 +1,4 @@
-import { Home } from "react-feather";
+import { Home, Layout, Users, ShoppingBag, Database } from "react-feather";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { fab } from "@fortawesome/free-brands-svg-icons";
@@ -32,33 +32,25 @@ const Drawer = () => {
           </li>
           <li>
             <a href="#" className="nav-link link-dark">
-              <svg className="bi me-2" width="16" height="16">
-                <a href="#speedometer2"></a>
-              </svg>
-              Dashboard
+              <Layout className="drawer-icon-menu" />
+              Layout
             </a>
           </li>
           <li>
             <a href="#" className="nav-link link-dark">
-              <svg className="bi me-2" width="16" height="16">
-                <a href="#table"></a>
-              </svg>
+              <ShoppingBag className="drawer-icon-menu" />
               Orders
             </a>
           </li>
           <li>
             <a href="#" className="nav-link link-dark">
-              <svg className="bi me-2" width="16" height="16">
-                <a href="#grid"></a>
-              </svg>
-              Products
+              <Database className="drawer-icon-menu" />
+              Data Tables
             </a>
           </li>
           <li>
             <a href="#" className="nav-link link-dark">
-              <svg className="bi me-2" width="16" height="16">
-                <a href="#people-circle"></a>
-              </svg>
+              <Users className="drawer-icon-menu" />
               Customers
             </a>
           </li>
@@ -73,7 +65,7 @@ const Drawer = () => {
             aria-expanded="false"
           >
             <img
-              src="https://github.com/mdo.png"
+              src="https://avatars.githubusercontent.com/u/637956?v=4"
               alt=""
               className="rounded-circle me-2"
               width="32"

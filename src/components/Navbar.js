@@ -98,7 +98,7 @@ const Navbar = () => {
             aria-expanded="false"
           >
             <img
-              src="https://github.com/mdo.png"
+              src="https://avatars.githubusercontent.com/u/637956?v=4"
               alt=""
               className="rounded-circle me-2"
               width="42"

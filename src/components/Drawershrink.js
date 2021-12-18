@@ -1,4 +1,4 @@
-import { Home, Copy, User } from "react-feather";
+import { Home, Layout, Users, ShoppingBag, Database } from "react-feather";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Drawershrink = () => {
@@ -15,11 +15,11 @@ const Drawershrink = () => {
         >
           <FontAwesomeIcon icon={["fab", "bootstrap"]} className="brand-icon" />
         </a>
-        <ul className="d-flex nav nav-pills nav-flush flex-column mb-auto text-center">
+        <ul className="mt-3 d-flex nav nav-pills nav-flush flex-column mb-auto text-center">
           <li className="nav-item">
             <a
               href="#"
-              className="nav-link active py-3 border-bottom"
+              className="nav-link active py-3"
               aria-current="page"
               title=""
               data-bs-toggle="tooltip"
@@ -32,49 +32,49 @@ const Drawershrink = () => {
           <li>
             <a
               href="#"
-              className="nav-link py-3 border-bottom"
+              className="nav-link py-3"
               title=""
               data-bs-toggle="tooltip"
               data-bs-placement="right"
               data-bs-original-title="Dashboard"
             >
-              <Copy className="nav-icon" />
+              <Layout className="nav-icon" />
             </a>
           </li>
           <li>
             <a
               href="#"
-              className="nav-link py-3 border-bottom"
+              className="nav-link py-3"
               title=""
               data-bs-toggle="tooltip"
               data-bs-placement="right"
               data-bs-original-title="Orders"
             >
-              <User className="nav-icon" />
+              <ShoppingBag className="nav-icon" />
             </a>
           </li>
           <li>
             <a
               href="#"
-              className="nav-link py-3 border-bottom"
+              className="nav-link py-3"
               title=""
               data-bs-toggle="tooltip"
               data-bs-placement="right"
               data-bs-original-title="Products"
             >
-              <User className="nav-icon" />
+              <Database className="nav-icon" />
             </a>
           </li>
           <li>
             <a
               href="#"
-              className="nav-link py-3 border-bottom"
+              className="nav-link py-3"
               title=""
               data-bs-toggle="tooltip"
               data-bs-placement="right"
               data-bs-original-title="Customers"
             >
-              <User className="nav-icon" />
+              <Users className="nav-icon" />
             </a>
           </li>
         </ul>

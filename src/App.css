@@ -4,8 +4,21 @@ html {
 
 body {
   min-height: 100vh;
-  background-color: #ddd;
+  background: #f5f6f8;
+  color: #212529;
   min-height: -webkit-fill-available;
+  }
+
+a{
+    color: #212529!important;
+  }
+
+.link-dark {
+  color: #212529;
+  }
+
+.bg-light{
+  background-color: #fff!important;
   }
 
 main {
@@ -24,7 +37,6 @@ main {
   padding-right: 15px!important;
   }
   
-
 .wrapper {
   display: flex;
   width: 100%;
@@ -32,11 +44,15 @@ main {
 }
 
 .container-fluid{
-  background-color: #ddd;
   padding-right: 0!important;
   padding-left: 0!important;
   }
   
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff!important;
+  background: #4b2294;
+} 
+
 .drawer-icon{
   cursor: pointer;
   width: 28px;
@@ -48,10 +64,10 @@ main {
   }
   
 
-/* Navbar */
 .wrap-drawer{
   padding: 8px;
 }
+
 
 .dropdown-toggle::after { 
   margin-right: -5px; /* Fixing alignment behavior */
@@ -76,7 +92,6 @@ main {
 #sidebar {
   min-width: 250px;
   max-width: 250px;
-  background: #ddd;
   color: #fff;
   transition: all 0.3s;
 }
@@ -89,11 +104,13 @@ main {
   }
 
 .nav-wrap{
-  background-color: #673ab7;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   padding-right: 15px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 35px 0 rgba(154,161,171,.15);
+  box-shadow: 0 0 35px 0 rgba(154,161,171,.15);
   }
 
 .dropdown-toggle { 
@@ -105,9 +122,9 @@ main {
   }
 
 .icon-badge {
-  background-color: red;
+  background-color: #ff0000;
   font-size: 12px;
-  color: white;
+  color: #fff;
   text-align: center;
   width:20px;
   height:20px;
@@ -121,7 +138,7 @@ main {
   margin-top:8px;
   margin-right: 10px;
   position:relative;
-  padding-bottom: 6px;
+  padding-bottom: 8px;
 }
 
 
@@ -139,24 +156,28 @@ main {
 
 #sidebar ul li a{
   padding: 10px;
-  font-size: 1.1em;
+  font-size: 16px;
   display: block;
+  color: #212529;
   }
 
+
+
 #sidebar ul li a:hover {
-  color: #7386D5;
-  background: #fff;
-}
+  color: #000!important;
+  background: #fafafa;
+  }
 
 #sidebar ul li.active>a,
 a[aria-expanded="true"] {
-  color: #fff;
+  color: #fff!important;
   background: #4b2294;
-}
+  }
 
 a[data-toggle="collapse"] {
   position: relative;
-}
+  }
+
 .dropdown-toggle::after {
   display: block;
   position: absolute;
