@@ -1,4 +1,5 @@
-import { Home } from "react-feather";
+import { Link } from "react-router-dom";
+import { Home, Layout, Users, ShoppingBag, Database } from "react-feather";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { fab } from "@fortawesome/free-brands-svg-icons";
@@ -13,100 +14,92 @@ const Drawer = () => {
   return (
     <div id="sidebar">
       <div className="vh-100 d-flex flex-column flex-shrink-0 p-3 bg-light">
-        <a
-          href="/"
+        <Link
+          to="/"
           className="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none"
         >
           <h2>
             <FontAwesomeIcon icon={["fab", "bootstrap"]} />
             <span>{sitename}</span>
           </h2>
-        </a>
+        </Link>
         <hr />
         <ul className="nav nav-pills flex-column mb-auto">
           <li className="nav-item">
-            <a href="#" className="nav-link active" aria-current="page">
-              <Home className="nav-icon-wide" />
+            <Link to="/" className="nav-link active" aria-current="page">
+              <Home className="drawer-icon-menu" />
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#" className="nav-link link-dark">
-              <svg className="bi me-2" width="16" height="16">
-                <a href="#speedometer2"></a>
-              </svg>
-              Dashboard
-            </a>
+            <Link to="/layout" className="nav-link link-dark">
+              <Layout className="drawer-icon-menu" />
+              Layout
+            </Link>
           </li>
           <li>
-            <a href="#" className="nav-link link-dark">
-              <svg className="bi me-2" width="16" height="16">
-                <a href="#table"></a>
-              </svg>
+            <Link to="/" className="nav-link link-dark">
+              <ShoppingBag className="drawer-icon-menu" />
               Orders
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#" className="nav-link link-dark">
-              <svg className="bi me-2" width="16" height="16">
-                <a href="#grid"></a>
-              </svg>
-              Products
-            </a>
+            <Link to="/" className="nav-link link-dark">
+              <Database className="drawer-icon-menu" />
+              Data Tables
+            </Link>
           </li>
           <li>
-            <a href="#" className="nav-link link-dark">
-              <svg className="bi me-2" width="16" height="16">
-                <a href="#people-circle"></a>
-              </svg>
+            <Link to="/" className="nav-link link-dark">
+              <Users className="drawer-icon-menu" />
               Customers
-            </a>
+            </Link>
           </li>
         </ul>
         <hr />
         <div className="dropdown">
-          <a
-            href="#"
+          <Link
+            to="/"
             className="custom-dropdown d-flex align-items-center link-dark text-decoration-none dropdown-toggle"
             id="dropdownUser2"
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
             <img
-              src="https://github.com/mdo.png"
+              src="https://avatars.githubusercontent.com/u/637956?v=4"
               alt=""
               className="rounded-circle me-2"
               width="32"
               height="32"
             />
             Settings
-          </a>
+          </Link>
           <ul
             className="dropdown-menu text-small shadow"
             aria-labelledby="dropdownUser2"
           >
             <li>
-              <a className="dropdown-item" href="#">
+              <Link to="/" className="dropdown-item">
                 New project...
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="dropdown-item" href="#">
+              <Link to="/" className="dropdown-item">
                 Settings
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="dropdown-item" href="#">
+              <Link to="/" className="dropdown-item">
                 Profile
-              </a>
+              </Link>
             </li>
             <li>
               <hr className="dropdown-divider" />
             </li>
             <li>
-              <a className="dropdown-item" href="#">
+              <Link to="/" className="dropdown-item">
                 Sign out
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
