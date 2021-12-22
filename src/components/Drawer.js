@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Home, Layout, Users, ShoppingBag, Database } from "react-feather";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -13,52 +14,52 @@ const Drawer = () => {
   return (
     <div id="sidebar">
       <div className="vh-100 d-flex flex-column flex-shrink-0 p-3 bg-light">
-        <a
-          href="/"
+        <Link
+          to="/"
           className="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none"
         >
           <h2>
             <FontAwesomeIcon icon={["fab", "bootstrap"]} />
             <span>{sitename}</span>
           </h2>
-        </a>
+        </Link>
         <hr />
         <ul className="nav nav-pills flex-column mb-auto">
           <li className="nav-item">
-            <a href="/" className="nav-link active" aria-current="page">
+            <Link to="/" className="nav-link active" aria-current="page">
               <Home className="drawer-icon-menu" />
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/" className="nav-link link-dark">
+            <Link to="/layout" className="nav-link link-dark">
               <Layout className="drawer-icon-menu" />
               Layout
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/" className="nav-link link-dark">
+            <Link to="/" className="nav-link link-dark">
               <ShoppingBag className="drawer-icon-menu" />
               Orders
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/" className="nav-link link-dark">
+            <Link to="/" className="nav-link link-dark">
               <Database className="drawer-icon-menu" />
               Data Tables
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/" className="nav-link link-dark">
+            <Link to="/" className="nav-link link-dark">
               <Users className="drawer-icon-menu" />
               Customers
-            </a>
+            </Link>
           </li>
         </ul>
         <hr />
         <div className="dropdown">
-          <a
-            href="/"
+          <Link
+            to="/"
             className="custom-dropdown d-flex align-items-center link-dark text-decoration-none dropdown-toggle"
             id="dropdownUser2"
             data-bs-toggle="dropdown"
@@ -72,33 +73,33 @@ const Drawer = () => {
               height="32"
             />
             Settings
-          </a>
+          </Link>
           <ul
             className="dropdown-menu text-small shadow"
             aria-labelledby="dropdownUser2"
           >
             <li>
-              <a className="dropdown-item" href="/">
+              <Link to="/" className="dropdown-item">
                 New project...
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="dropdown-item" href="/">
+              <Link to="/" className="dropdown-item">
                 Settings
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="dropdown-item" href="/">
+              <Link to="/" className="dropdown-item">
                 Profile
-              </a>
+              </Link>
             </li>
             <li>
               <hr className="dropdown-divider" />
             </li>
             <li>
-              <a className="dropdown-item" href="/">
+              <Link to="/" className="dropdown-item">
                 Sign out
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
