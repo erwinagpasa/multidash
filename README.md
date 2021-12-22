@@ -1,4 +1,4 @@
-DEMO: https://brave-borg-8044c7.netlify.app/
+DEMO: https://nifty-ride-32ea5f.netlify.app
 
 <h2>Getting Started</h2>
 
