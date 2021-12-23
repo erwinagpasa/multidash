@@ -1,7 +1,5 @@
 import "./App.css";
-
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
 import Navbar from "./components/Navbar";
 import Drawer from "./components/Drawer";
 import Drawershrink from "./components/Drawershrink";
@@ -9,11 +7,16 @@ import Home from "./containers/Home";
 import Offcanvas from "./components/Offcanvas";
 import Layout from "./containers/Layout";
 
-// import { fab } from "@fortawesome/free-brands-svg-icons";
-// import { library } from "@fortawesome/fontawesome-svg-core";
-// import { faBars } from "@fortawesome/free-solid-svg-icons";
-
-// library.add(fab, faBars);
+window.onload = function () {
+  const sidebarCollapse = document.getElementById("sidebarCollapse");
+  const toggleClass = (el, className) => el.classList.toggle(className);
+  const sidebar = document.getElementById("sidebar");
+  const menuShrink = document.getElementById("menu-shrink");
+  sidebarCollapse.addEventListener("click", function () {
+    toggleClass(sidebar, "active");
+    toggleClass(menuShrink, "shrink");
+  });
+};
 
 function App() {
   return (
