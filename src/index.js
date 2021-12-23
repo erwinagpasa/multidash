@@ -1,18 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import $ from "jquery";
+
 import "./index.css";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/js/bootstrap.js";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
-$(function () {
-  $("#sidebarCollapse").on("click", function () {
-    $("#sidebar").toggleClass("active");
-    $("#menu-shrink").toggleClass("shrink");
-  });
-});
 ReactDOM.render(
   <React.StrictMode>
     <App />
