@@ -27,4 +27,5 @@ Mulitidash is licensed under The MIT License (MIT). Which means that you can use
   <img src="https://contrib.rocks/image?repo=erwinagpasa/multidash" />
 </a>
 
+<h2>Special Thanks</h2>
 CK Mirafuente https://www.facebook.com/ckmirafss
