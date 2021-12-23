@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-
 import { Search, Sidebar, Bell, Sliders, Menu } from "react-feather";
 
 const Navbar = () => {
