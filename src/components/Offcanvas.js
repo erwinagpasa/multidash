@@ -1,21 +1,21 @@
 const Offcanvas = () => {
   return (
     <div
-      class="offcanvas offcanvas-end"
-      tabindex="-1"
+      className="offcanvas offcanvas-end"
+      // tabindex="-1"
       id="offcanvasRight"
       aria-labelledby="offcanvasRightLabel"
     >
-      <div class="offcanvas-header">
+      <div className="offcanvas-header">
         <h5 id="offcanvasRightLabel">Offcanvas right</h5>
         <button
           type="button"
-          class="btn-close text-reset"
+          className="btn-close text-reset"
           data-bs-dismiss="offcanvas"
           aria-label="Close"
         ></button>
       </div>
-      <div class="offcanvas-body">...</div>
+      <div className="offcanvas-body">...</div>
     </div>
   );
 };
