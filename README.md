@@ -54,5 +54,7 @@ Don't forget to give the project a star! Thanks again!
 </a>
 
 <h2>Special Thanks</h2>
+
 CK Mirafuente https://www.facebook.com/ckmirafss
+
 Jhee https://www.facebook.com/j21lacson
