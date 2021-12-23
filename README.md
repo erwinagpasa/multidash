@@ -22,7 +22,9 @@ Install https://react-icons.github.io/react-icons/icons?name=fi
 
 MIT License
 
-Copyright (c) 2022 [Software Developer (Philippines) Group] https://www.facebook.com/groups/software.dev.ph
+Copyright (c) 2022
+
+<a href="https://www.facebook.com/groups/software.dev.ph"><strong>Software Developer (Philippines) Group</strong></a>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
