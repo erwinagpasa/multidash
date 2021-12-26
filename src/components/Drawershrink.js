@@ -6,14 +6,7 @@ const Drawershrink = () => {
   return (
     <div id="menu-shrink" className="display-none">
       <div className="vh-100 d-flex flex-column flex-shrink-0 bg-light">
-        <Link
-          to="/"
-          className="d-block p-3 link-dark text-decoration-none"
-          title=""
-          data-bs-toggle="tooltip"
-          data-bs-placement="right"
-          data-bs-original-title="Icon-only"
-        >
+        <Link to="/" className="d-block p-3 link-dark text-decoration-none">
           <FontAwesomeIcon icon={["fab", "bootstrap"]} className="brand-icon" />
         </Link>
         <ul className="mt-3 d-flex nav nav-pills nav-flush flex-column mb-auto text-center">
@@ -37,7 +30,7 @@ const Drawershrink = () => {
               title=""
               data-bs-toggle="tooltip"
               data-bs-placement="right"
-              data-bs-original-title="Dashboard"
+              data-bs-original-title="Layout"
             >
               <Layout className="nav-icon" />
             </Link>
@@ -61,7 +54,7 @@ const Drawershrink = () => {
               title=""
               data-bs-toggle="tooltip"
               data-bs-placement="right"
-              data-bs-original-title="Products"
+              data-bs-original-title="Data Tables"
             >
               <Database className="nav-icon" />
             </Link>
@@ -73,7 +66,7 @@ const Drawershrink = () => {
               title=""
               data-bs-toggle="tooltip"
               data-bs-placement="right"
-              data-bs-original-title="Customers"
+              data-bs-original-title="Users"
             >
               <Users className="nav-icon" />
             </Link>
