@@ -6,6 +6,8 @@ import Drawershrink from "./components/Drawershrink";
 import Home from "./containers/Home";
 import Offcanvas from "./components/Offcanvas";
 import Layout from "./containers/Layout";
+import React, { useEffect } from "react";
+import { Tooltip } from "bootstrap/dist/js/bootstrap.bundle.js";
 
 window.onload = function () {
   const sidebarCollapse = document.getElementById("sidebarCollapse");
@@ -19,6 +21,11 @@ window.onload = function () {
 };
 
 function App() {
+  useEffect(() => {
+    Array.from(document.querySelectorAll('[data-bs-toggle="tooltip"]')).forEach(
+      (tooltipNode) => new Tooltip(tooltipNode)
+    );
+  });
   return (
     <div className="App">
       <Router>
